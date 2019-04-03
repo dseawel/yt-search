@@ -7,6 +7,7 @@ Simple single-page web app that searches for video results on YouTube based on k
 * material-ui
 * redux
 * axios
+* jest
 
 ## Running locally
 Create `.env` file in root dir specifying your YouTube API Version (YT_API_VERSION) and API Key (YT_API_KEY)

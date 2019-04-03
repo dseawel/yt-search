@@ -17,10 +17,10 @@ export class SearchForm extends PureComponent {
     error: PropTypes.object,
     fetchYouTubeSearchResults: PropTypes.func,
     maxResults: PropTypes.string,
-    setMaxResults: PropTypes.func,
     searchParam: PropTypes.string,
-    setSearchParam: PropTypes.func,
     searchSort: PropTypes.string,
+    setMaxResults: PropTypes.func,
+    setSearchParam: PropTypes.func,
     setSearchSort: PropTypes.func,
   };
 
@@ -46,7 +46,7 @@ export class SearchForm extends PureComponent {
         })
         .catch(error => {
           alert('Error from YouTube');
-          console.log('error', error);
+          //console.log('error', error);
         });
     }
   };

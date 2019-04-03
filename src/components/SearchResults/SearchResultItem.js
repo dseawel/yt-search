@@ -41,7 +41,11 @@ const SearchResultItem = ({searchResultItem, classes}) => {
   } = searchResultItem;
   return (
     <Card className={classes.card}>
-      <a href={`https://www.youtube.com/watch?v=${videoId}`} target="_blank">
+      <a
+        href={`https://www.youtube.com/watch?v=${videoId}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <CardHeader
           title={decodeURI(title)}
           subheader={format(publishedAt, 'MMM D, YYYY h:mm a')}

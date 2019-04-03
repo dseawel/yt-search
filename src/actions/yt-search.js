@@ -85,7 +85,7 @@ function fetchTotalComments() {
           }
         })
         .catch(error => {
-          console.log('error', error)
+          //console.log('error', error)
           return Promise.reject(error.Message);
         });
     });

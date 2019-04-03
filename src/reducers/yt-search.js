@@ -11,14 +11,13 @@ export const INITIAL_STATE = {
 
 function mergeCommentTotal(searchResults, payload) {
   const {videoId, commentCount} = payload;
-  const newSearchResults = searchResults.filter(
-    result => result.id.videoId !== videoId
-  );
-  newSearchResults.push({
-    ...searchResults.find(result => result.id.videoId === videoId),
-    commentCount,
-  });
-  return newSearchResults;
+  return [
+    ...searchResults.filter(result => result.id.videoId !== videoId),
+    {
+      ...searchResults.find(result => result.id.videoId === videoId),
+      commentCount,
+    },
+  ];
 }
 
 export default (state = INITIAL_STATE, {type, payload}) => {
