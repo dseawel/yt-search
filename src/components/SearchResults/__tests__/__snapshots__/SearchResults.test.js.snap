@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResults renders without crashing 1`] = `null`;
+
+exports[`SearchResults renders without crashing 2`] = `
+Array [
+  <div
+    className="MuiPaper-root-4 MuiPaper-elevation1-7 MuiPaper-rounded-5 MuiCard-root-3 SearchResultItem-card-1"
+  >
+    <a
+      href="https://www.youtube.com/watch?v=5MI6GE0zeXg"
+      target="_blank"
+    >
+      <div
+        className="MuiCardHeader-root-31"
+      >
+        <div
+          className="MuiCardHeader-content-34"
+        >
+          <span
+            className="MuiTypography-root-37 MuiTypography-headline-42 MuiCardHeader-title-35"
+          >
+            Elite GamerEx vs JackHenry SUB TO MEH
+          </span>
+          <span
+            className="MuiTypography-root-37 MuiTypography-body1-46 MuiTypography-colorTextSecondary-70 MuiCardHeader-subheader-36"
+          >
+            Mar 25, 2019 02:12
+          </span>
+        </div>
+      </div>
+    </a>
+    <div
+      className="MuiCardMedia-root-73 SearchResultItem-media-2"
+      style={
+        Object {
+          "backgroundImage": "url(\\"https://i.ytimg.com/vi/5MI6GE0zeXg/hqdefault.jpg\\")",
+        }
+      }
+      title="title"
+    />
+    <div
+      className="MuiCardContent-root-75"
+    >
+      <p
+        className="MuiTypography-root-37 MuiTypography-body1-46"
+      >
+        undefined
+      </p>
+      0
+    </div>
+  </div>,
+  <div
+    className="MuiPaper-root-4 MuiPaper-elevation1-7 MuiPaper-rounded-5 MuiCard-root-3 SearchResultItem-card-1"
+  >
+    <a
+      href="https://www.youtube.com/watch?v=fgtBbWTPL0w"
+      target="_blank"
+    >
+      <div
+        className="MuiCardHeader-root-31"
+      >
+        <div
+          className="MuiCardHeader-content-34"
+        >
+          <span
+            className="MuiTypography-root-37 MuiTypography-headline-42 MuiCardHeader-title-35"
+          >
+            Lumber-Jack Blues - Henry Mancini - Sometimes A Great Notion
+          </span>
+          <span
+            className="MuiTypography-root-37 MuiTypography-body1-46 MuiTypography-colorTextSecondary-70 MuiCardHeader-subheader-36"
+          >
+            Dec 22, 2012 01:22
+          </span>
+        </div>
+      </div>
+    </a>
+    <div
+      className="MuiCardMedia-root-73 SearchResultItem-media-2"
+      style={
+        Object {
+          "backgroundImage": "url(\\"https://i.ytimg.com/vi/fgtBbWTPL0w/hqdefault.jpg\\")",
+        }
+      }
+      title="title"
+    />
+    <div
+      className="MuiCardContent-root-75"
+    >
+      <p
+        className="MuiTypography-root-37 MuiTypography-body1-46"
+      >
+        https://www.facebook.com/1960sFilmSoundtracksAndMovieFun Track 4 from the original soundtrack - composed by Henry Mancini from the 1970 film starring ...
+      </p>
+      0
+    </div>
+  </div>,
+]
+`;

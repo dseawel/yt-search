@@ -2,16 +2,23 @@ import * as types from 'constants';
 import * as endpoints from 'config/endpoints';
 import * as requester from 'services/requester';
 
-export function searchParamChanged(payload) {
+export function setSearchParam(payload) {
   return {
     type: types.SEARCH_PARAM_CHANGED,
     payload,
   };
 }
 
-export function searchSortChanged(payload) {
+export function setSearchSort(payload) {
   return {
     type: types.SEARCH_SORT_CHANGED,
+    payload,
+  };
+}
+
+export function setMaxResults(payload) {
+  return {
+    type: types.MAX_RESULTS_CHANGED,
     payload,
   };
 }
@@ -20,14 +27,14 @@ export function fetchYouTubeSearchResults() {
   return (dispatch, getState) => {
     dispatch({type: types.FETCH_SEARCH_RESULTS_STARTED});
     const {
-      ytSearch: {searchParam, searchSort},
+      ytSearch: {searchParam, searchSort, maxResults},
     } = getState();
 
     const url = `${
       endpoints.YT_SEARCH
     }?part=snippet&q=${searchParam.toLowerCase()}&key=${
       process.env.YT_API_KEY
-    }&maxResults=10&order=${searchSort}`;
+    }&maxResults=${maxResults}&order=${searchSort}`;
     return requester
       .sendGet(url)
       .then(result => {
@@ -44,7 +51,7 @@ export function fetchYouTubeSearchResults() {
           type: types.FETCH_SEARCH_RESULTS_FINISHED_ERROR,
           payload: error,
         });
-        return Promise.reject(error.Message);
+        return Promise.reject(error);
       });
   };
 }

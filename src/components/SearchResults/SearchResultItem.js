@@ -35,8 +35,8 @@ const SearchResultItem = ({searchResultItem, classes}) => {
       thumbnails: {
         high: {url: thumbnailUrl},
       },
-      id: {videoId},
     },
+    id: {videoId},
     commentCount,
   } = searchResultItem;
   return (
@@ -44,7 +44,7 @@ const SearchResultItem = ({searchResultItem, classes}) => {
       <a href={`https://www.youtube.com/watch?v=${videoId}`} target="_blank">
         <CardHeader
           title={decodeURI(title)}
-          subheader={format(publishedAt, 'MMM D, YYYY hh:mm')}
+          subheader={format(publishedAt, 'MMM D, YYYY h:mm a')}
         />
       </a>
       <CardMedia image={thumbnailUrl} title="title" className={classes.media} />

@@ -5,12 +5,13 @@ import {
   Input,
   InputLabel,
   InputAdornment,
+  Typography,
 } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
 const propTypes = {
   error: PropTypes.string,
-  handleSearchParamChanged: PropTypes.func,
+  handlesetSearchParam: PropTypes.func,
 };
 
 const SearchInput = props => (
@@ -23,12 +24,12 @@ const SearchInput = props => (
           <SearchIcon />
         </InputAdornment>
       }
-      placeholder="Search"
+      placeholder="Keyword"
       onChange={searchParam =>
-        props.handleSearchParamChanged(searchParam.target.value)
+        props.handlesetSearchParam(searchParam.target.value)
       }
     />
-    {props.error && <em>{props.error}</em>}
+    {props.error && <Typography component="em">{props.error}</Typography>}
   </FormControl>
 );
 

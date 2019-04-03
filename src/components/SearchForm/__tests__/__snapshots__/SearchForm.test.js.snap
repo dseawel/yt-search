@@ -1,0 +1,369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm renders without crashing 1`] = `
+<div>
+  <div>
+    <div
+      className="MuiFormControl-root-1"
+    >
+      <label
+        className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+        data-shrink={true}
+        htmlFor="adornment-search"
+      >
+        Search YouTube
+      </label>
+      <div
+        className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-adornedStart-40"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiInputAdornment-root-53 MuiInputAdornment-positionStart-55"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-58"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <input
+          aria-invalid={false}
+          className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputAdornedStart-51"
+          disabled={false}
+          id="adornment-search"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Keyword"
+          required={false}
+          type="text"
+        />
+      </div>
+    </div>
+     
+    <div
+      className="MuiFormControl-root-1"
+    >
+      <label
+        className="MuiFormLabel-root-16 MuiFormLabel-filled-20 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+        data-shrink={true}
+        htmlFor="max"
+      >
+        Max Results: 
+      </label>
+      <div
+        className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-formControl-37 MuiInput-formControl-24 MaxResults-maxResultsSelect-67"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiSelect-root-68"
+        >
+          <div
+            aria-haspopup="true"
+            aria-pressed="false"
+            className="MuiSelect-select-69 MuiSelect-selectMenu-72 MuiInputBase-input-46 MuiInput-input-31"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            1
+          </div>
+          <input
+            id="max"
+            type="hidden"
+            value="1"
+          />
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-58 MuiSelect-icon-74"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      className="MuiFormControl-root-1"
+    >
+      <label
+        className="MuiFormLabel-root-16 MuiFormLabel-filled-20 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+        data-shrink={true}
+        htmlFor="sort"
+      >
+        Sort by: 
+      </label>
+      <div
+        className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-formControl-37 MuiInput-formControl-24"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiSelect-root-68"
+        >
+          <div
+            aria-haspopup="true"
+            aria-pressed="false"
+            className="MuiSelect-select-69 MuiSelect-selectMenu-72 MuiInputBase-input-46 MuiInput-input-31"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            Rating
+          </div>
+          <input
+            id="sort"
+            type="hidden"
+            value="rating"
+          />
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-58 MuiSelect-icon-74"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div>
+    <button
+      className="MuiButtonBase-root-105 MuiButton-root-79 MuiButton-contained-90 MuiButton-containedPrimary-91 MuiButton-raised-93 MuiButton-raisedPrimary-94"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label-80"
+      >
+        Search
+      </span>
+      <span
+        className="MuiTouchRipple-root-108"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`SearchForm renders without crashing 2`] = `
+<div>
+  <div>
+    <div
+      className="MuiFormControl-root-1"
+    >
+      <label
+        className="MuiFormLabel-root-16 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+        data-shrink={true}
+        htmlFor="adornment-search"
+      >
+        Search YouTube
+      </label>
+      <div
+        className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-formControl-37 MuiInput-formControl-24 MuiInputBase-adornedStart-40"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiInputAdornment-root-53 MuiInputAdornment-positionStart-55"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-58"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <input
+          aria-invalid={false}
+          className="MuiInputBase-input-46 MuiInput-input-31 MuiInputBase-inputAdornedStart-51"
+          disabled={false}
+          id="adornment-search"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Keyword"
+          required={false}
+          type="text"
+        />
+      </div>
+    </div>
+     
+    <div
+      className="MuiFormControl-root-1"
+    >
+      <label
+        className="MuiFormLabel-root-16 MuiFormLabel-filled-20 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+        data-shrink={true}
+        htmlFor="max"
+      >
+        Max Results: 
+      </label>
+      <div
+        className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-formControl-37 MuiInput-formControl-24 MaxResults-maxResultsSelect-67"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiSelect-root-68"
+        >
+          <div
+            aria-haspopup="true"
+            aria-pressed="false"
+            className="MuiSelect-select-69 MuiSelect-selectMenu-72 MuiInputBase-input-46 MuiInput-input-31"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            10
+          </div>
+          <input
+            id="max"
+            type="hidden"
+            value="10"
+          />
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-58 MuiSelect-icon-74"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+     
+    <div
+      className="MuiFormControl-root-1"
+    >
+      <label
+        className="MuiFormLabel-root-16 MuiFormLabel-filled-20 MuiInputLabel-root-5 MuiInputLabel-formControl-10 MuiInputLabel-animated-13 MuiInputLabel-shrink-12"
+        data-shrink={true}
+        htmlFor="sort"
+      >
+        Sort by: 
+      </label>
+      <div
+        className="MuiInputBase-root-36 MuiInput-root-23 MuiInput-underline-27 MuiInputBase-formControl-37 MuiInput-formControl-24"
+        onClick={[Function]}
+      >
+        <div
+          className="MuiSelect-root-68"
+        >
+          <div
+            aria-haspopup="true"
+            aria-pressed="false"
+            className="MuiSelect-select-69 MuiSelect-selectMenu-72 MuiInputBase-input-46 MuiInput-input-31"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            Date
+          </div>
+          <input
+            id="sort"
+            type="hidden"
+            value="date"
+          />
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root-58 MuiSelect-icon-74"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div>
+    <button
+      className="MuiButtonBase-root-105 MuiButton-root-79 MuiButton-contained-90 MuiButton-containedPrimary-91 MuiButton-raised-93 MuiButton-raisedPrimary-94"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label-80"
+      >
+        Search
+      </span>
+      <span
+        className="MuiTouchRipple-root-108"
+      />
+    </button>
+  </div>
+</div>
+`;

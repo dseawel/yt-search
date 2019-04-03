@@ -4,6 +4,7 @@ export const INITIAL_STATE = {
   searchResults: [],
   loading: false,
   error: {},
+  maxResults: '1',
   searchParam: null,
   searchSort: 'rating',
 };
@@ -25,7 +26,7 @@ export default (state = INITIAL_STATE, {type, payload}) => {
     case types.RESET_STATE:
       return {...INITIAL_STATE};
     case types.FETCH_SEARCH_RESULTS_STARTED:
-      return {...state, loading: true, error: false};
+      return {...state, loading: true, error: {}};
     case types.FETCH_SEARCH_RESULTS_FINISHED_SUCCESS:
       return {...state, searchResults: payload, loading: false};
     case types.FETCH_SEARCH_RESULTS_FINISHED_ERROR:
@@ -37,6 +38,8 @@ export default (state = INITIAL_STATE, {type, payload}) => {
     case types.SEARCH_PARAM_CHANGED:
       return {...state, ...payload};
     case types.SEARCH_SORT_CHANGED:
+      return {...state, ...payload};
+    case types.MAX_RESULTS_CHANGED:
       return {...state, ...payload};
     case types.FETCH_TOTAL_COMMENTS_FINISHED_SUCCESS:
       return {

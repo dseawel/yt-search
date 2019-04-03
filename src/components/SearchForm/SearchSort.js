@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {FormControl, InputLabel, MenuItem, Select} from '@material-ui/core';
 
 const propTypes = {
-  handleSearchSortChanged: PropTypes.func,
+  handlesetSearchSort: PropTypes.func,
   searchSort: PropTypes.string,
 };
 
@@ -12,9 +12,8 @@ const SearchSort = props => (
     <InputLabel htmlFor="sort">{'Sort by: '}</InputLabel>
     <Select
       id="sort"
-      placeholder="Sort By"
       onChange={searchSort =>
-        props.handleSearchSortChanged(searchSort.target.value)
+        props.handlesetSearchSort(searchSort.target.value)
       }
       value={props.searchSort}
     >

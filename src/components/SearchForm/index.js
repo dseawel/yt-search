@@ -3,21 +3,25 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {
   fetchYouTubeSearchResults,
-  searchParamChanged,
-  searchSortChanged,
+  setMaxResults,
+  setSearchParam,
+  setSearchSort,
 } from 'actions/yt-search';
 import SearchInput from './SearchInput';
 import SearchSort from './SearchSort';
+import MaxResults from './MaxResults';
 import {Button, CircularProgress} from '@material-ui/core';
 
 export class SearchForm extends PureComponent {
   static propTypes = {
     error: PropTypes.object,
     fetchYouTubeSearchResults: PropTypes.func,
+    maxResults: PropTypes.string,
+    setMaxResults: PropTypes.func,
     searchParam: PropTypes.string,
-    searchParamChanged: PropTypes.func,
+    setSearchParam: PropTypes.func,
     searchSort: PropTypes.string,
-    searchSortChanged: PropTypes.func,
+    setSearchSort: PropTypes.func,
   };
 
   constructor(props) {
@@ -51,7 +55,7 @@ export class SearchForm extends PureComponent {
     const {searchParam} = this.props;
     const validationErrors = {};
     if (!searchParam || searchParam.length < 2) {
-      validationErrors.searchParam = 'Search Parameter is missing';
+      validationErrors.searchParam = 'Search keyword is missing';
     }
     this.setState({
       validationErrors,
@@ -59,12 +63,16 @@ export class SearchForm extends PureComponent {
     });
   };
 
-  _handleSearchParamChanged = searchParam => {
-    this.props.searchParamChanged({searchParam});
+  _handlesetSearchParam = searchParam => {
+    this.props.setSearchParam({searchParam});
   };
 
-  _handleSearchSortChanged = searchSort => {
-    this.props.searchSortChanged({searchSort});
+  _handlesetSearchSort = searchSort => {
+    this.props.setSearchSort({searchSort});
+  };
+
+  _handlesetMaxResults = maxResults => {
+    this.props.setMaxResults({maxResults});
   };
 
   render() {
@@ -72,14 +80,17 @@ export class SearchForm extends PureComponent {
       <div>
         <div>
           <SearchInput
-            handleSearchParamChanged={this._handleSearchParamChanged}
+            handlesetSearchParam={this._handlesetSearchParam}
             error={this.state.validationErrors.searchParam}
           />
-        </div>
-        <br />
-        <div>
+          &nbsp;
+          <MaxResults
+            handlesetMaxResults={this._handlesetMaxResults}
+            maxResults={this.props.maxResults}
+          />
+          &nbsp;
           <SearchSort
-            handleSearchSortChanged={this._handleSearchSortChanged}
+            handlesetSearchSort={this._handlesetSearchSort}
             searchSort={this.props.searchSort}
           />
         </div>
@@ -109,5 +120,10 @@ const mapStateToProps = ({ytSearch}) => {
 
 export default connect(
   mapStateToProps,
-  {fetchYouTubeSearchResults, searchParamChanged, searchSortChanged}
+  {
+    fetchYouTubeSearchResults,
+    setMaxResults,
+    setSearchParam,
+    setSearchSort,
+  }
 )(SearchForm);

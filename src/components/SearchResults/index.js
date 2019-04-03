@@ -7,7 +7,7 @@ const propTypes = {
   searchResults: PropTypes.arrayOf(PropTypes.object),
 };
 
-class SearchResults extends PureComponent {
+export class SearchResults extends PureComponent {
   static propTypes = {
     searchResults: PropTypes.arrayOf(PropTypes.object),
   };

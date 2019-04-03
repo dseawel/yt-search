@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -22,8 +23,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^6.0.1",
+    "react-test-renderer": "^16.8.6",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.3",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
@@ -34,7 +37,21 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.7.0",
     "prettier": "^1.16.4",
     "prettier-eslint": "^8.8.2"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!parse)/"
+    ],
+    "unmockedModulePathPatterns": [
+      "react",
+      "axios",
+      "redux",
+      "redux-thunk",
+      "date-fns"
+    ],
+    "verbose": true
   }
 }
