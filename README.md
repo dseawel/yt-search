@@ -10,12 +10,12 @@ Simple single-page web app that searches for video results on YouTube based on k
 * jest
 
 ## Running locally
-Create `.env` file in root dir specifying your YouTube API Version (YT_API_VERSION) and API Key (YT_API_KEY)
+* Create `.env` file in root dir specifying your YouTube API Version (YT_API_VERSION) and API Key (YT_API_KEY)
 ex:
 ```
 YT_API_VERSION='v3'
 YT_API_KEY='YOURAPIKEY'
 ```
-Get dependancies: `yarn`
-Run app with: `npm run dev`
-Test with: `yarn run test`
+* Get dependancies: `yarn`
+* Run app with: `npm run dev`
+* Test with: `yarn run test`
