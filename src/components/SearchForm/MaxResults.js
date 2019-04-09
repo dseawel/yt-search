@@ -5,7 +5,7 @@ import {withStyles} from '@material-ui/core/styles';
 
 const propTypes = {
   classes: PropTypes.object,
-  handlesetMaxResults: PropTypes.func,
+  handleSetMaxResults: PropTypes.func,
   maxResults: PropTypes.string,
 };
 
@@ -15,12 +15,12 @@ const styles = {
   },
 };
 
-const MaxResults = ({classes, handlesetMaxResults, maxResults}) => (
+const MaxResults = ({classes, handleSetMaxResults, maxResults}) => (
   <FormControl>
     <InputLabel htmlFor="max">{'Max Results: '}</InputLabel>
     <Select
       id="max"
-      onChange={value => handlesetMaxResults(value.target.value)}
+      onChange={value => handleSetMaxResults(value.target.value)}
       value={maxResults}
       className={classes.maxResultsSelect}
     >

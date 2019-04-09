@@ -47,13 +47,13 @@ const SearchResultItem = ({searchResultItem, classes}) => {
         rel="noopener noreferrer"
       >
         <CardHeader
-          title={decodeURI(title)}
+          title={title}
           subheader={format(publishedAt, 'MMM D, YYYY h:mm a')}
         />
       </a>
       <CardMedia image={thumbnailUrl} title="title" className={classes.media} />
       <CardContent>
-        <Typography component="p">{decodeURI(description)}</Typography>
+        <Typography component="p">{description}</Typography>
         {commentCount && (
           <Typography component="em">
             {`Total Comments: ${commentCount}`}

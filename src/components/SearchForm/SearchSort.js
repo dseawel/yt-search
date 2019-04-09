@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {FormControl, InputLabel, MenuItem, Select} from '@material-ui/core';
 
 const propTypes = {
-  handlesetSearchSort: PropTypes.func,
+  handleSetSearchSort: PropTypes.func,
   searchSort: PropTypes.string,
 };
 
@@ -13,7 +13,7 @@ const SearchSort = props => (
     <Select
       id="sort"
       onChange={searchSort =>
-        props.handlesetSearchSort(searchSort.target.value)
+        props.handleSetSearchSort(searchSort.target.value)
       }
       value={props.searchSort}
     >

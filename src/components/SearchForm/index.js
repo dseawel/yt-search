@@ -67,11 +67,11 @@ export class SearchForm extends PureComponent {
     this.props.setSearchParam({searchParam});
   };
 
-  _handlesetSearchSort = searchSort => {
+  _handleSetSearchSort = searchSort => {
     this.props.setSearchSort({searchSort});
   };
 
-  _handlesetMaxResults = maxResults => {
+  _handleSetMaxResults = maxResults => {
     this.props.setMaxResults({maxResults});
   };
 
@@ -85,12 +85,12 @@ export class SearchForm extends PureComponent {
           />
           &nbsp;
           <MaxResults
-            handlesetMaxResults={this._handlesetMaxResults}
+            handleSetMaxResults={this._handleSetMaxResults}
             maxResults={this.props.maxResults}
           />
           &nbsp;
           <SearchSort
-            handlesetSearchSort={this._handlesetSearchSort}
+            handleSetSearchSort={this._handleSetSearchSort}
             searchSort={this.props.searchSort}
           />
         </div>
